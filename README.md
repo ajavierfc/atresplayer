@@ -6,14 +6,23 @@ Require requests
 
 _Choose channel and play (check the player path in the source)_
 
-./get.py
+`python get.py`
 
-_Get link channel_
+_Get channel stream link_
 
-./get.py <ANTENA_3|LA_SEXTA|NEOX|NOVA|MEGA|ATRESERIESe>
+`python get.py <ANTENA_3|LA_SEXTA|NEOX|NOVA|MEGA|ATRESERIES>`
+
+_Player_
+
+Default player command is `mpv`, under windows you may want to use vlc, so set the player command as `"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe"`
 
 __Examples__
 
-Linux: ``mpv `./get.py NEOX` ``
+Linux: ``mpv `python get.py NEOX` ``
 
-Windows (Powershell): `& 'C:\Program Files\VideoLAN\VLC\vlc.exe' (python .\get.py NEOX)`
+Windows (Powershell): `& 'C:\Program Files\VideoLAN\VLC\vlc.exe' (python get.py NEOX)`
+
+__Notes__
+
+* outside from spain probably wont work as is, due to geo-lock
+
